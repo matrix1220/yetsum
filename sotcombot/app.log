@@ -1,0 +1,110 @@
+2021-07-18 14:37:38,558;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:49,240;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:49,523;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:49,802;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:50,062;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:50,398;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:50,767;ERROR;Bad Request: message to delete not found
+2021-07-18 14:39:51,069;ERROR;Bad Request: message to delete not found
+2021-07-18 14:42:00,179;ERROR;Bad Request: message to delete not found
+2021-07-18 14:44:11,357;ERROR;Bad Request: message to delete not found
+2021-07-18 14:44:11,635;ERROR;Bad Request: message to delete not found
+2021-07-18 14:44:11,917;ERROR;Bad Request: message to delete not found
+2021-07-18 14:46:22,322;ERROR;Bad Request: message to delete not found
+2021-07-18 14:46:22,589;ERROR;Bad Request: message to delete not found
+2021-07-18 14:46:22,865;ERROR;Bad Request: message to delete not found
+2021-07-18 14:46:23,147;ERROR;Bad Request: message to delete not found
+2021-07-18 14:46:23,424;ERROR;Bad Request: message to delete not found
+2021-07-18 14:46:23,694;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:33,494;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:33,761;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:34,046;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:34,305;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:34,620;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:34,919;ERROR;Bad Request: message to delete not found
+2021-07-18 14:48:35,207;ERROR;Bad Request: message to delete not found
+2021-07-18 14:52:55,540;ERROR;Bad Request: message to delete not found
+2021-07-18 14:52:55,821;ERROR;Bad Request: message to delete not found
+2021-07-18 14:52:56,171;ERROR;Bad Request: message to delete not found
+2021-07-18 14:52:56,433;ERROR;Bad Request: message to delete not found
+2021-07-18 14:55:06,733;ERROR;Bad Request: message to delete not found
+2021-07-18 14:55:06,993;ERROR;Bad Request: message to delete not found
+2021-07-18 14:55:07,247;ERROR;Bad Request: message to delete not found
+2021-07-18 14:55:07,540;ERROR;Bad Request: message to delete not found
+2021-07-18 14:57:17,682;ERROR;Bad Request: message to delete not found
+2021-07-18 14:59:28,746;ERROR;Bad Request: message to delete not found
+2021-07-18 15:01:39,831;ERROR;Bad Request: message to delete not found
+2021-07-18 15:01:40,116;ERROR;Bad Request: message to delete not found
+2021-07-18 15:06:01,972;ERROR;Bad Request: message to delete not found
+2021-07-18 15:06:02,232;ERROR;Bad Request: message to delete not found
+2021-07-18 15:06:02,507;ERROR;Bad Request: message to delete not found
+2021-07-18 15:06:03,456;ERROR;Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-07-18 15:06:03,456;ERROR;('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+2021-07-18 15:06:03,627;ERROR;Bad Request: message to edit not found
+2021-07-18 15:06:03,628;ERROR;('Bad Request: message to edit not found', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message to edit not found', 400)
+2021-07-18 15:06:03,791;ERROR;Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-07-18 15:06:03,791;ERROR;('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+2021-07-18 15:06:03,976;ERROR;Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-07-18 15:06:03,976;ERROR;('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+2021-07-18 15:06:04,198;ERROR;Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-07-18 15:06:04,198;ERROR;('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+2021-07-18 15:06:04,408;ERROR;Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-07-18 15:06:04,408;ERROR;('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+2021-07-18 15:30:07,995;ERROR;Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-07-18 15:30:07,996;ERROR;('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 82, in long_polling
+    await self._send_response(temp)
+  File "/root/sotcombot/photon/client/__init__.py", line 68, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotcombot/photon/client/__init__.py", line 63, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message', 400)

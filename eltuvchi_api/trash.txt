@@ -1,0 +1,39 @@
+# from flask import Flask
+# from flask_restful import Api, Resource, abort
+# import methods
+
+# app = Flask(__name__)
+# api = Api(app)
+
+# class Methods(Resource):
+# 	def get(self, method):
+# 		return self._univ("get", method)
+
+# 	def _univ(self, method_type, method):
+# 		if hasattr(methods, method_type + method):
+# 			current = getattr(methods, method_type + method)
+# 			args = current.parser.parse_args()
+# 			return current.run(**args)
+# 		else:
+# 			abort(404)
+		
+
+# api.add_resource(Methods, "/<string:method>")
+
+# if __name__ == "__main__":
+# 	app.run(debug=True)
+
+
+
+# class SotCom(object):
+
+#     def dispatch_request(self, request):
+#         return Response(request.path)
+
+#     def wsgi_app(self, environ, start_response):
+#         request = Request(environ)
+#         response = self.dispatch_request(request)
+#         return response(environ, start_response)
+
+#     def __call__(self, environ, start_response):
+#         return self.wsgi_app(environ, start_response)

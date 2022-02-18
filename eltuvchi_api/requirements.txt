@@ -1,0 +1,4 @@
+SQLAlchemy
+flup
+werkzeug
+mysql-connector-python

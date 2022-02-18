@@ -1,0 +1,25 @@
+language: "O'zbekcha"
+select_language: 'Tilni tanlash:'
+
+welcome: "Hush kelibsiz"
+help: "/help - yordam"
+
+error: 'xato'
+back: 'Orqaga'
+yeap: 'Ha' 
+all: 'Hammasi'
+select: 'Tanlang:'
+
+order_message_text: "\U0001F464 {order.name}\n\U0001F4F1 {order.phone}\n\U0001F4F1 {order.secondary_phone}\n\U0001F6CD {order.quantity} dona\
+  \ {offer.short_name}, {order.cost} so'm\n\n\U0001F3D8 {order.region}, #{order.district}.\
+  \ {order.message}\n\U0001F565 {order.date_time}, \U0001F46E {cooperator}"
+
+
+main:
+  message: "Bosh menyu"
+
+  order: "Buyurtma"
+  balance: "Balans"
+  sold: "Sotdim"
+  daily_stats: "Bugun"
+  weekly_stats: "Hisobot"

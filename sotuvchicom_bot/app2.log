@@ -1,0 +1,1009 @@
+ERROR:root:type object 'ShowAd' has no attribute 'handle_message'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 157, in handle_message
+    return await self._execute_handle(handler.handle_message, [message])
+AttributeError: type object 'ShowAd' has no attribute 'handle_message'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:invalid literal for int() with base 10: 'Rolik (197)'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 145, in handle_message
+    result = await self.handle_text(text)
+  File "/root/sotuvchicombot/photon/__init__.py", line 161, in handle_text
+    return await self._execute_handle(handler.handle_text, [text])
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 84, in handle_text
+    user.menu_arguments = {"offer_id":int(text)}
+ValueError: invalid literal for int() with base 10: 'Rolik (197)'
+ERROR:photon.bot:Forbidden: bot was blocked by the user
+ERROR:root:('Forbidden: bot was blocked by the user', 403)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 78, in long_polling
+    await self._send_response(temp)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 64, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Forbidden: bot was blocked by the user', 403)
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'ShowAd' has no attribute 'handle_message'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 157, in handle_message
+    return await self._execute_handle(handler.handle_message, [message])
+AttributeError: type object 'ShowAd' has no attribute 'handle_message'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:photon.bot:Forbidden: bot was blocked by the user
+ERROR:root:('Forbidden: bot was blocked by the user', 403)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 78, in long_polling
+    await self._send_response(temp)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 64, in _send_response
+    return await self._send(response.pop('method'), response)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Forbidden: bot was blocked by the user', 403)
+ERROR:root:[Errno -2] Name or service not known
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 48, in send
+    response = await self.pool.request(
+  File "/usr/local/lib/python3.8/site-packages/http3/interfaces.py", line 49, in request
+    return await self.send(request, verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 130, in send
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 120, in send
+    response = await connection.send(
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 53, in send
+    await self.connect(verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 81, in connect
+    reader, writer, protocol = await self.backend.connect(
+  File "/usr/local/lib/python3.8/site-packages/http3/concurrency.py", line 204, in connect
+    stream_reader, stream_writer = await asyncio.wait_for(  # type: ignore
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/asyncio/streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 982, in create_connection
+    infos = await self._ensure_resolved(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 1361, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 821, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 53, in _send
+    result = await requests.post('https://api.telegram.org/bot' + self._token + '/' + method, json=args)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 25, in post
+    return await request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 6, in request
+    return await session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 79, in request
+    resp = await self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 136, in send
+    r = await adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 58, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: [Errno -2] Name or service not known
+ERROR:root:[Errno -2] Name or service not known
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 48, in send
+    response = await self.pool.request(
+  File "/usr/local/lib/python3.8/site-packages/http3/interfaces.py", line 49, in request
+    return await self.send(request, verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 130, in send
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 120, in send
+    response = await connection.send(
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 53, in send
+    await self.connect(verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 81, in connect
+    reader, writer, protocol = await self.backend.connect(
+  File "/usr/local/lib/python3.8/site-packages/http3/concurrency.py", line 204, in connect
+    stream_reader, stream_writer = await asyncio.wait_for(  # type: ignore
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/asyncio/streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 982, in create_connection
+    infos = await self._ensure_resolved(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 1361, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 821, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 53, in _send
+    result = await requests.post('https://api.telegram.org/bot' + self._token + '/' + method, json=args)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 25, in post
+    return await request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 6, in request
+    return await session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 79, in request
+    resp = await self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 136, in send
+    r = await adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 58, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: [Errno -2] Name or service not known
+ERROR:root:invalid literal for int() with base 10: 'Muhammad Iso (86)'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 145, in handle_message
+    result = await self.handle_text(text)
+  File "/root/sotuvchicombot/photon/__init__.py", line 161, in handle_text
+    return await self._execute_handle(handler.handle_text, [text])
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 84, in handle_text
+    user.menu_arguments = {"offer_id":int(text)}
+ValueError: invalid literal for int() with base 10: 'Muhammad Iso (86)'
+ERROR:root:type object 'ShowAd' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'ShowAd' has no attribute 'handle_video'
+ERROR:root:Can't reconnect until invalid transaction is rolled back
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1204, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 806, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1162, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 1000, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 558, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 140, in handle_message
+    return await self.main_menu(match.group(1))
+  File "/root/sotuvchicombot/photon/__init__.py", line 114, in main_menu
+    return await self.explicit_act(handlers[0])(arg)
+  File "/root/sotuvchicombot/photon/__init__.py", line 105, in func
+    result = await self._execute_handle(handler.act, args, kwargs)
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 17, in act
+    return await user.act(ShowAd)(arg)
+  File "/root/sotuvchicombot/photon/__init__.py", line 96, in func
+    result = await self._execute_handle(handler.act, args, kwargs)
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 33, in act
+    stream = session2.query(Stream).filter(Stream.url==url).first()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1206, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1204, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 806, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1162, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 1000, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 558, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT streams.id AS streams_id, streams.user_id AS streams_user_id, streams.template_id AS streams_template_id, streams.offer_id AS streams_offer_id, streams.name AS streams_name, streams.url AS streams_url, streams.status AS streams_status 
+FROM streams 
+WHERE streams.url = %(url_1)s 
+ LIMIT %(param_1)s]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 16, in handle
+    session2.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1042, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 508, in commit
+    t[1].commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1764, in commit
+    self._do_commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1795, in _do_commit
+    self.connection._commit_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 773, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 771, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 392, in connection
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 390, in connection
+    return self._revalidate_connection()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 469, in _revalidate_connection
+    raise exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+ERROR:root:This session is in 'prepared' state; no further SQL can be emitted within this transaction.
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 140, in handle_message
+    return await self.main_menu(match.group(1))
+  File "/root/sotuvchicombot/photon/__init__.py", line 114, in main_menu
+    return await self.explicit_act(handlers[0])(arg)
+  File "/root/sotuvchicombot/photon/__init__.py", line 105, in func
+    result = await self._execute_handle(handler.act, args, kwargs)
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 17, in act
+    return await user.act(ShowAd)(arg)
+  File "/root/sotuvchicombot/photon/__init__.py", line 96, in func
+    result = await self._execute_handle(handler.act, args, kwargs)
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 33, in act
+    stream = session2.query(Stream).filter(Stream.url==url).first()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3529, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3544, in _get_bind_args
+    return fn(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3523, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1138, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1146, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 409, in _connection_for_bind
+    self._assert_active()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 282, in _assert_active
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: This session is in 'prepared' state; no further SQL can be emitted within this transaction.
+ERROR:root:type object 'ShowAd' has no attribute 'handle_message'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 157, in handle_message
+    return await self._execute_handle(handler.handle_message, [message])
+AttributeError: type object 'ShowAd' has no attribute 'handle_message'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'ShowAd' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'ShowAd' has no attribute 'handle_video'
+ERROR:root:type object 'ShowAd' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'ShowAd' has no attribute 'handle_video'
+ERROR:root:type object 'ShowAd' has no attribute 'handle_message'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 157, in handle_message
+    return await self._execute_handle(handler.handle_message, [message])
+AttributeError: type object 'ShowAd' has no attribute 'handle_message'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:Can't reconnect until invalid transaction is rolled back
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1204, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 806, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1162, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 1000, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 558, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+mysql.connector.errors.OperationalError: MySQL Connection not available.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 140, in handle_message
+    return await self.main_menu(match.group(1))
+  File "/root/sotuvchicombot/photon/__init__.py", line 114, in main_menu
+    return await self.explicit_act(handlers[0])(arg)
+  File "/root/sotuvchicombot/photon/__init__.py", line 105, in func
+    result = await self._execute_handle(handler.act, args, kwargs)
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 17, in act
+    return await user.act(ShowAd)(arg)
+  File "/root/sotuvchicombot/photon/__init__.py", line 96, in func
+    result = await self._execute_handle(handler.act, args, kwargs)
+  File "/root/sotuvchicombot/photon/__init__.py", line 127, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotuvchicombot/scenario.py", line 33, in act
+    stream = session2.query(Stream).filter(Stream.url==url).first()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3402, in first
+    ret = list(self[0:1])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3176, in __getitem__
+    return list(res)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3508, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3533, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1206, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1204, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 806, in _init_compiled
+    self.cursor = self.create_cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 1162, in create_cursor
+    return self._dbapi_connection.cursor()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 1000, in cursor
+    return self.connection.cursor(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 558, in cursor
+    raise errors.OperationalError("MySQL Connection not available.")
+sqlalchemy.exc.OperationalError: (mysql.connector.errors.OperationalError) MySQL Connection not available.
+[SQL: SELECT streams.id AS streams_id, streams.user_id AS streams_user_id, streams.template_id AS streams_template_id, streams.offer_id AS streams_offer_id, streams.name AS streams_name, streams.url AS streams_url, streams.status AS streams_status 
+FROM streams 
+WHERE streams.url = %(url_1)s 
+ LIMIT %(param_1)s]
+[parameters: [immutabledict({})]]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 16, in handle
+    session2.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1042, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 508, in commit
+    t[1].commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1764, in commit
+    self._do_commit()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1795, in _do_commit
+    self.connection._commit_impl()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 773, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 771, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 392, in connection
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 390, in connection
+    return self._revalidate_connection()
+  File "/usr/local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 469, in _revalidate_connection
+    raise exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+ERROR:root:[Errno -2] Name or service not known
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 48, in send
+    response = await self.pool.request(
+  File "/usr/local/lib/python3.8/site-packages/http3/interfaces.py", line 49, in request
+    return await self.send(request, verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 130, in send
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 120, in send
+    response = await connection.send(
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 53, in send
+    await self.connect(verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 81, in connect
+    reader, writer, protocol = await self.backend.connect(
+  File "/usr/local/lib/python3.8/site-packages/http3/concurrency.py", line 204, in connect
+    stream_reader, stream_writer = await asyncio.wait_for(  # type: ignore
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/asyncio/streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 982, in create_connection
+    infos = await self._ensure_resolved(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 1361, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 821, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 53, in _send
+    result = await requests.post('https://api.telegram.org/bot' + self._token + '/' + method, json=args)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 25, in post
+    return await request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 6, in request
+    return await session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 79, in request
+    resp = await self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 136, in send
+    r = await adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 58, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: [Errno -2] Name or service not known
+ERROR:root:[Errno -2] Name or service not known
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 48, in send
+    response = await self.pool.request(
+  File "/usr/local/lib/python3.8/site-packages/http3/interfaces.py", line 49, in request
+    return await self.send(request, verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 130, in send
+    raise exc
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection_pool.py", line 120, in send
+    response = await connection.send(
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 53, in send
+    await self.connect(verify=verify, cert=cert, timeout=timeout)
+  File "/usr/local/lib/python3.8/site-packages/http3/dispatch/connection.py", line 81, in connect
+    reader, writer, protocol = await self.backend.connect(
+  File "/usr/local/lib/python3.8/site-packages/http3/concurrency.py", line 204, in connect
+    stream_reader, stream_writer = await asyncio.wait_for(  # type: ignore
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/asyncio/streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 982, in create_connection
+    infos = await self._ensure_resolved(
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 1361, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "/usr/local/lib/python3.8/asyncio/base_events.py", line 821, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 53, in _send
+    result = await requests.post('https://api.telegram.org/bot' + self._token + '/' + method, json=args)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 25, in post
+    return await request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/api.py", line 6, in request
+    return await session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 79, in request
+    resp = await self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/sessions.py", line 136, in send
+    r = await adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests_async/adapters.py", line 58, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: [Errno -2] Name or service not known
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:photon.bot:Bad Gateway
+ERROR:root:('Bad Gateway', 502)
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 74, in long_polling
+    for update in await self.getUpdates(offset=offset, timeout=30):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 28, in exec
+    return await self.bot._send(self.method, self.data)
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 59, in _send
+    raise Exception(data.description, data.error_code)
+Exception: ('Bad Gateway', 502)
+ERROR:root:type object 'ShowAd' has no attribute 'handle_message'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 157, in handle_message
+    return await self._execute_handle(handler.handle_message, [message])
+AttributeError: type object 'ShowAd' has no attribute 'handle_message'
+ERROR:root:type object 'MainMenu' has no attribute 'handle_video'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 151, in handle_message
+    result = await self.handle_video(video)
+  File "/root/sotuvchicombot/photon/__init__.py", line 165, in handle_video
+    return await self._execute_handle(handler.handle_video, [video])
+AttributeError: type object 'MainMenu' has no attribute 'handle_video'
+ERROR:root:type object 'ShowAd' has no attribute 'handle_message'
+Traceback (most recent call last):
+  File "/root/sotuvchicombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotuvchicombot/bot.py", line 13, in handle
+    _response = await photon.handle(update) # photon.handle
+  File "/root/sotuvchicombot/photon/__init__.py", line 43, in handle
+    return await user.handle_message(message)
+  File "/root/sotuvchicombot/photon/__init__.py", line 157, in handle_message
+    return await self._execute_handle(handler.handle_message, [message])
+AttributeError: type object 'ShowAd' has no attribute 'handle_message'

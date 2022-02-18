@@ -1,0 +1,59 @@
+ERROR:root:type object 'Order' has no attribute 'offer'
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotcombot/bot.py", line 9, in handle
+    _response = await main(update)
+  File "/root/sotcombot/bot.py", line 46, in main
+    return await user.handle_callback(callback_query)
+  File "/root/sotcombot/photon/__init__.py", line 136, in handle_callback
+    return await self._execute_handle(handler.handle_callback, [callback_query, data])
+  File "/root/sotcombot/photon/__init__.py", line 121, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotcombot/scenario.py", line 226, in handle_callback
+    return await Orders.show(user, region_id=region_id, district_id=district_id)
+  File "/root/sotcombot/scenario.py", line 229, in show
+    orders = user.sotcom.get.Orders(**request)
+  File "/root/sotcombot/sotcom.py", line 23, in function
+    return self.instance.send(self.method_type, method, kwargs)
+  File "/root/sotcombot/sotcom.py", line 37, in send
+    if not data.ok: raise Exception(data.err_str)
+Exception: type object 'Order' has no attribute 'offer'
+ERROR:root:'paid' is an invalid keyword argument for Order
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotcombot/bot.py", line 9, in handle
+    _response = await main(update)
+  File "/root/sotcombot/bot.py", line 35, in main
+    return await user.handle_text(text)
+  File "/root/sotcombot/photon/__init__.py", line 130, in handle_text
+    return await self._execute_handle(handler.handle_text, [text])
+  File "/root/sotcombot/photon/__init__.py", line 121, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotcombot/scenario.py", line 148, in handle_text
+    tmp = user.sotcom.post.Order(offer_id=user.current_menu()[1][0], quantity=user.current_menu()[1][1])
+  File "/root/sotcombot/sotcom.py", line 23, in function
+    return self.instance.send(self.method_type, method, kwargs)
+  File "/root/sotcombot/sotcom.py", line 37, in send
+    if not data.ok: raise Exception(data.err_str)
+Exception: 'paid' is an invalid keyword argument for Order
+ERROR:root:'paid' is an invalid keyword argument for Order
+Traceback (most recent call last):
+  File "/root/sotcombot/photon/client/__init__.py", line 77, in long_polling
+    if temp := await handle(update):
+  File "/root/sotcombot/bot.py", line 9, in handle
+    _response = await main(update)
+  File "/root/sotcombot/bot.py", line 35, in main
+    return await user.handle_text(text)
+  File "/root/sotcombot/photon/__init__.py", line 130, in handle_text
+    return await self._execute_handle(handler.handle_text, [text])
+  File "/root/sotcombot/photon/__init__.py", line 121, in _execute_handle
+    result = await handle(self, *args, **kwargs)
+  File "/root/sotcombot/scenario.py", line 148, in handle_text
+    tmp = user.sotcom.post.Order(offer_id=user.current_menu()[1][0], quantity=user.current_menu()[1][1])
+  File "/root/sotcombot/sotcom.py", line 23, in function
+    return self.instance.send(self.method_type, method, kwargs)
+  File "/root/sotcombot/sotcom.py", line 37, in send
+    if not data.ok: raise Exception(data.err_str)
+Exception: 'paid' is an invalid keyword argument for Order

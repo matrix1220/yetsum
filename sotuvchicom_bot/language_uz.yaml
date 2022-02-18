@@ -1,0 +1,25 @@
+language: "English"
+select_language: 'Select language:'
+
+welcome: "Welcome"
+help: "/help - help"
+about: "This bot was developed by @matrix_1220. Please feel free to contact if you have any suggestions."
+
+error: 'Error'
+back: 'Back'
+yeap: 'Yes' 
+select: 'Select:'
+empty: "Empty"
+not_found: "Not Found"
+successful: "Successful"
+
+
+main_menu:
+  title: "Main Menu"
+
+  deadlines: "Deadlines"
+  my_group: "My Group"
+  my_subjects: "My Subjects"
+
+  not_in_group: "Enter code of a group or create new group"
+  new_group: "Create new group"
